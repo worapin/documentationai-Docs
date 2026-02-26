@@ -1,0 +1,115 @@
+---
+title: Changelog
+description: Track the latest updates, new features, and improvements in WiseSpark.
+---
+
+## Overview
+
+WiseSpark releases updates regularly to introduce new AI models, enhance performance, and fix issues. You receive automatic updates in your dashboard at `https://dashboard.example.com`. Check this page for detailed release notes.
+
+<Callout kind="tip">
+  Enable notifications in your account settings to get email alerts for major releases.
+</Callout>
+
+## Recent Releases
+
+<Columns cols={3}>
+  <Card title="v1.3.0" icon="zap" href="#v1-3-0">
+    New AI models and chat improvements.
+  </Card>
+  <Card title="v1.2.0" icon="settings" href="#v1-2-0">
+    Workspace enhancements and bug fixes.
+  </Card>
+  <Card title="v1.1.0" icon="check-circle" href="#v1-1-0">
+    Billing and integration updates.
+  </Card>
+</Columns>
+
+<Update label="2024-10-15" description="v1.3.0" tags={["feature", "improvement"]} id="v1-3-0">
+
+## New Features
+
+- Added support for advanced AI models including GPT-4o and Claude 3.5 Sonnet in the Chat interface.
+- Introduced real-time collaboration in Workspaces, allowing multiple users to chat simultaneously.
+- New Model Settings panel for easy switching and customization per conversation.
+
+## Improvements
+
+- Optimized response times by `>30%` for high-traffic workspaces.
+- Enhanced credit usage tracking with detailed breakdowns in the dashboard.
+
+## Bug Fixes
+
+- Fixed quota display issues after payment processing.
+- Resolved login redirect errors on first-time access.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.2.0" tags={["bugfix", "improvement"]} id="v1-2-0">
+
+## New Features
+
+- Added Admin controls for managing team members and permissions in Workspaces.
+- Integrated webhook support for custom notifications at `https://your-webhook-url.com/webhook`.
+
+## Improvements
+
+- Improved search functionality in chat history with fuzzy matching.
+- Updated UI for better mobile responsiveness.
+
+## Bug Fixes
+
+- Corrected credit allocation delays after subscription payments.
+- Fixed model selection persistence across sessions.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.1.0" tags={["feature", "breaking"]} id="v1-1-0">
+
+## New Features
+
+- Launched Credits & Billing system with flexible subscription tiers.
+- Added Integrations panel for connecting with Slack and Zapier.
+
+## Breaking Changes
+
+- Updated API authentication to require `Authorization: Bearer YOUR_TOKEN` header. Migrate your integrations.
+
+## Bug Fixes
+
+- Patched first-login setup wizard glitches.
+- Stabilized connection to core AI models.
+
+</Update>
+
+## Staying Updated
+
+<Steps>
+  <Step title="Check Dashboard" icon="monitor">
+    Visit `https://dashboard.example.com/updates` regularly for the latest version.
+  </Step>
+  <Step title="Enable Notifications" icon="bell">
+    Go to Account Settings {`>`} Notifications and select release alerts.
+  </Step>
+  <Step title="Review Migration Guide" icon="book-open">
+    For breaking changes, see the detailed guide in each release above.
+  </Step>
+</Steps>
+
+## Upcoming Changes
+
+<Expandable title="Planned Features (Q4 2024)" default-open="false">
+
+- Voice input support for Chat (beta).
+- Advanced analytics dashboard for usage insights.
+- Deprecation of legacy models (GPT-3.5-turbo) by end of year – migrate to newer options.
+
+<Callout kind="info">
+  These features are in development. Follow this changelog for progress.
+</Callout>
+
+</Expandable>
+
+<Callout kind="alert">
+  Always test updates in a staging workspace before production rollout.
+</Callout>
